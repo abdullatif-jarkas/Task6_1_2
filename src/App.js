@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
+import car1 from './assets/imgs/car1.jpg'
+import car2 from './assets/imgs/car2.jpg'
+import car3 from './assets/imgs/car3.jpg'
+
+let imageIndex = [car1, car2, car3]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageSlider images={imageIndex}/>
     </div>
   );
 }
